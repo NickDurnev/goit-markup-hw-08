@@ -1,0 +1,30 @@
+.adress__item {
+  margin-bottom: 9px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+.adress__link {
+  display: block;
+
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 24px;
+  letter-spacing: 0.03em;
+  color: $primary-background;
+
+  &--main {
+    color: $primary-background;
+  }
+
+  &--add {
+    color: $primary-background;
+  }
+
+  &:hover,
+  &:focus {
+    color: $accent-color;
+  }
+}

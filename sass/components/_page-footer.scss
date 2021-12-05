@@ -1,0 +1,21 @@
+.container--footer {
+  display: flex;
+  align-items: baseline;
+}
+.footer-section {
+  padding: 60px 0;
+
+  background-color: $secondary-background;
+}
+
+.footer-section__join {
+  margin-left: 70px;
+}
+
+.footer-section__subscription {
+  margin-left: 93px;
+}
+
+.footer-section__contact-block {
+  flex-grow: 1;
+}
