@@ -1,9 +1,9 @@
-.grid {
-  display: flex;
-  flex-wrap: wrap;
-  margin: -15px;
-}
+// .grid {
+//   // display: flex;
+//   // flex-wrap: wrap;
+//   margin: -15px;
+// }
 
-.grid__item {
-  margin: 15px;
+.grid__item:not(:last-child) {
+  margin-bottom: 30px;
 }

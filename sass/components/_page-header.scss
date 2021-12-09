@@ -1,16 +1,37 @@
 .header {
+  margin-left: auto;
+  margin-right: auto;
+
   border-bottom: 1px solid #ececec;
 }
 
+.header__logo {
+  @include viewport($range: mobile-only) {
+    padding-top: 16px;
+    padding-bottom: 16px;
+  }
+
+  @include viewport($range: tablet-only) {
+    margin-right: 88px;
+  }
+
+  @include viewport($range: desktop) {
+    margin-right: 93px;
+  }
+}
+
 .header__site-nav {
-  margin-left: 93px;
+  @include viewport($range: mobile-only) {
+    margin-bottom: 302px;
+  }
 }
 
 .header__contact-list {
-  margin-left: auto;
+  //   margin-left: auto;
 }
 
 .container__header {
   display: flex;
   align-items: center;
+  position: relative;
 }

@@ -1,12 +1,18 @@
 .filter {
   display: flex;
-  justify-content: center;
+  flex-wrap: wrap;
+  // justify-content: center;
 }
 
 .filter__item {
+  margin-bottom: 15px;
   margin-right: 8px;
 
   &:last-child {
     margin-right: 0;
+  }
+
+  &:nth-last-child(-n + 2) {
+    margin-bottom: 0px;
   }
 }

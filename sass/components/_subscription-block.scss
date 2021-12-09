@@ -1,3 +1,6 @@
+.subscription {
+  text-align: center;
+}
 .subscription__title {
   margin-bottom: 20px;
 
@@ -8,17 +11,18 @@
   color: #ffffff;
 }
 
-.subscription__form {
-  display: flex;
-  align-items: center;
-}
+// .subscription__form {
+//   display: flex;
+//   align-items: center;
+// }
 
 .subscription__input {
-  width: 358px;
-  padding: 14px 16px;
+  margin-bottom: 20px;
+  width: 100%;
+  padding: 15px 16px;
 
-  letter-spacing: 0.03em;
   line-height: 1.25;
+  letter-spacing: 0.03em;
   background-color: transparent;
   color: rgba(255, 255, 255, 0.6);
   border: 1px solid rgba(255, 255, 255, 0.3);
@@ -27,5 +31,5 @@
 }
 
 .subscription__button--subscription {
-  margin-left: 12px;
+  margin: auto;
 }

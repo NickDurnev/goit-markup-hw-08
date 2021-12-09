@@ -1,3 +1,8 @@
+.team-item {
+  &:not(:last-child) {
+    margin-bottom: 30px;
+  }
+}
 .team-item__title-block {
   padding: 30px 0;
   text-align: center;

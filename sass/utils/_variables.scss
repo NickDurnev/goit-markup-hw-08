@@ -1,3 +1,8 @@
+$mobile-wp: 480px;
+$tablet-wp: 768px;
+$desktop-wp: 1600px;
+$min-wp: 320px;
+
 $accent-color: #2196f3;
 $primary-text-color: #212121;
 $secondary-text-color: #757575;
@@ -6,3 +11,5 @@ $secondary-background: #2f303a;
 $logo-font-family: Raleway, sans-serif;
 $button-color: #ffffff;
 $animations-function-time: cubic-bezier(0.4, 0, 0.2, 1);
+$secondary-adress-color: rgba(255, 255, 255, 0.6);
+$primary-adress-color: #ffffff;

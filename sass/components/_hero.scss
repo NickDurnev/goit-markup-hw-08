@@ -1,10 +1,26 @@
 .hero {
-  padding: 200px 0;
-  text-align: center;
+  padding: 118px 0;
   margin-left: auto;
   margin-right: auto;
+  text-align: center;
 
-  max-width: 1600px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+
+  background-color: #c4c4c4;
+
+  @include viewport($range: mobile) {
+    width: 480px;
+  }
+
+  @include viewport($range: tablet) {
+    width: 768px;
+  }
+
+  @include viewport($range: desktop) {
+    width: 1600px;
+  }
 
   background-image: linear-gradient(
       to right,
@@ -12,26 +28,31 @@
       rgba(47, 48, 58, 0.4)
     ),
     url(../img/herobcg.jpg);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
+}
 
-  background-color: #c4c4c4;
+@include viewport($range: retina) {
+  .hero {
+    background-image: linear-gradient(
+        to right,
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url(../img/herobcgx2.jpg);
+  }
 }
 
 .hero__title {
-  margin-top: 0;
-  margin-right: auto;
+  // margin-top: 0;
+  margin: auto;
   margin-bottom: 30px;
-  margin-left: auto;
-  width: 696px;
+  width: 360px;
+  text-align: center;
 
   color: $primary-background;
 
   font-weight: 900;
-  font-size: 44px;
-  line-height: 1.36;
-  text-align: center;
+  font-size: 26px;
+  line-height: 1.61;
   letter-spacing: 0.06em;
   text-transform: uppercase;
 }

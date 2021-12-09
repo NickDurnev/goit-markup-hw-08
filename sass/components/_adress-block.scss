@@ -1,8 +1,6 @@
 .adress__item {
-  margin-bottom: 9px;
-
-  &:last-child {
-    margin-bottom: 0;
+  &:not(:last-child) {
+    margin-bottom: 8px;
   }
 }
 .adress__link {
@@ -16,11 +14,11 @@
   color: $primary-background;
 
   &--main {
-    color: $primary-background;
+    color: $primary-adress-color;
   }
 
   &--add {
-    color: $primary-background;
+    color: $secondary-adress-color;
   }
 
   &:hover,

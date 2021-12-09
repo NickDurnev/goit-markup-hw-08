@@ -5,6 +5,9 @@ body {
   font-family: Roboto, sans-serif;
   letter-spacing: 0.03em;
 }
+body.modal-open {
+  overflow: hidden;
+}
 a {
   text-decoration: none;
   color: $primary-text-color;
@@ -33,33 +36,24 @@ input {
 .container {
   margin-left: auto;
   margin-right: auto;
-  width: 1200px;
-  /* outline: 2px solid tomato; */
   padding-left: 15px;
   padding-right: 15px;
+
+  @include viewport($range: mobile) {
+    width: 480px;
+  }
+
+  @include viewport($range: tablet) {
+    width: 768px;
+  }
+
+  @include viewport($range: desktop) {
+    width: 1200px;
+  }
+  /* outline: 2px solid tomato; */
 }
 .section {
-  padding: 94px 0;
-}
-.section__title {
-  margin-bottom: 50px;
-  text-align: center;
-
-  font-size: 36px;
-  line-height: 1.16;
-  letter-spacing: 0.03em;
-}
-.visually-hidden {
-  position: absolute;
-  white-space: nowrap;
-  width: 1px;
-  height: 1px;
-  overflow: hidden;
-  border: 0;
-  padding: 0;
-  clip: rect(0 0 0 0);
-  clip-path: inset(50%);
-  margin: -1px;
+  padding: 60px 0;
 }
 a,
 button {
