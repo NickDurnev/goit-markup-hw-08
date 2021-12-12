@@ -16,7 +16,7 @@
     <header class="header">
         <div class="container container__header">
             <a class="logo header__logo" lang="en" href="./index.html"><span class="logo__title">Web</span>Studio</a>
-            <button class="menu-button" data-menu-button>
+            <button class="menu-button" aria-label="Переключатель мобильного меню" data-menu-button>
                 <svg class="modal__icon" 
                     width="40" 
                     height="40" 
@@ -85,10 +85,10 @@
         <section class="hero">
             <div class="container">
                 <h1 class="hero__title">Эффективные решения для вашего бизнеса</h1>
-                <button class="button button--order" data-modal-open type="button">Заказать услугу</button>
+                <button class="button button--order" data-modal-open type="button" aria-label="Заказать услугу">Заказать услугу</button>
                 <div class="backdrop backdrop--hidden" data-modal>
                     <div class="modal">
-                        <button class="modal__close-button" data-modal-close type="button">
+                        <button class="modal__close-button" data-modal-close type="button" aria-label="Закрытие модального окна">
                             <svg class="modal__icon" width="11" height="11">
                                 <use href="./img/icons.svg#icon-cross"></use>
                             </svg>
@@ -564,7 +564,7 @@
                     <label>
                         <input class="subscription__input" type="email" name="subscription_email" placeholder="E-mail" />
                     </label>
-                    <button class="button button--subscription subscription__button--subscription" type="submit" aria-label="Subscribe">Подписаться
+                    <button class="button button--subscription subscription__button--subscription" type="submit" aria-label="Подписаться">Подписаться
                         <svg class="button--subscription__icon">
                             <use href="./img/icons.svg#icon-send"></use>
                         </svg>
