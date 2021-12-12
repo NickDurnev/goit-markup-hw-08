@@ -16,7 +16,7 @@
       rgba(47, 48, 58, 0.4),
       rgba(47, 48, 58, 0.4)
     ),
-    url(./img/herobcg480.jpg);
+    url(../img/herobcg480.jpg);
 
   @include viewport($range: retina) {
     background-image: linear-gradient(
@@ -24,7 +24,7 @@
         rgba(47, 48, 58, 0.4),
         rgba(47, 48, 58, 0.4)
       ),
-      url(./img/herobcg480x2.jpg);
+      url(../img/herobcg480x2.jpg);
   }
 
   @include viewport($range: tablet) {
@@ -33,7 +33,7 @@
         rgba(47, 48, 58, 0.4),
         rgba(47, 48, 58, 0.4)
       ),
-      url(./img/herobcg768.jpg);
+      url(../img/herobcg768.jpg);
 
     @include viewport($range: retina) {
       background-image: linear-gradient(
@@ -41,7 +41,7 @@
           rgba(47, 48, 58, 0.4),
           rgba(47, 48, 58, 0.4)
         ),
-        url(./img/herobcg768x2.jpg);
+        url(../img/herobcg768x2.jpg);
     }
   }
 
@@ -52,7 +52,7 @@
         rgba(47, 48, 58, 0.4),
         rgba(47, 48, 58, 0.4)
       ),
-      url(./img/herobcg1600.jpg);
+      url(../img/herobcg1600.jpg);
 
     @include viewport($range: retina) {
       background-image: linear-gradient(
@@ -60,7 +60,7 @@
           rgba(47, 48, 58, 0.4),
           rgba(47, 48, 58, 0.4)
         ),
-        url(./img/herobcg1600x2.jpg);
+        url(../img/herobcg1600x2.jpg);
     }
   }
 }
