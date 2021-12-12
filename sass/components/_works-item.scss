@@ -1,5 +1,7 @@
 .works-item {
   position: relative;
+  width: calc((100%-90px) / 3);
+  margin: 15px;
 }
 
 .works-item__thumb {

@@ -1,3 +1,8 @@
 .button--send {
+  max-width: 200px;
   padding: 10px 55px;
+
+  @media (max-width: 280px) {
+    padding: 0;
+  }
 }

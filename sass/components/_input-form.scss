@@ -1,5 +1,9 @@
 .input-form {
   display: flex;
   flex-direction: column;
-  width: 370px;
+  max-width: 370px;
+
+  @include viewport($range: desktop) {
+    max-width: 448px;
+  }
 }

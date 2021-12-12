@@ -27,11 +27,17 @@
 }
 
 .header__contact-list {
-  //   margin-left: auto;
+  @include viewport($range: mobile-only) {
+    margin-bottom: 64px;
+  }
+  // margin-left: auto;
 }
 
 .container__header {
-  display: flex;
-  align-items: center;
   position: relative;
+
+  @include viewport($range: tablet) {
+    display: flex;
+    align-items: center;
+  }
 }

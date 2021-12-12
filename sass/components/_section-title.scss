@@ -5,4 +5,9 @@
   font-size: 28px;
   line-height: 1.17;
   letter-spacing: 0.03em;
+
+  @include viewport($range: desktop) {
+    margin-bottom: 50px;
+    font-size: 34px;
+  }
 }

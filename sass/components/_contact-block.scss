@@ -1,5 +1,7 @@
 .contact-block {
-  text-align: center;
+  @include viewport($range: notDesktop) {
+    text-align: center;
+  }
 }
 
 .contact-block__logo {

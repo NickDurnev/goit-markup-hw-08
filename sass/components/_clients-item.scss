@@ -1,9 +1,16 @@
 .clients-item {
-  width: calc((100% - 30px) / 2);
-  margin-bottom: 30px;
+  margin: 15px;
 
-  &:nth-last-child(-n + 2) {
-    margin-bottom: 0px;
+  @include viewport($range: mobile-only) {
+    width: calc((100% - 60px) / 2);
+  }
+
+  @include viewport($range: tablet-only) {
+    width: calc((100% - 90px) / 3);
+  }
+
+  @include viewport($range: desktop) {
+    width: calc((100% - 180px) / 6);
   }
 }
 

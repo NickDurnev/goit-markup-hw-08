@@ -1,5 +1,11 @@
+.product {
+  height: 100%;
+}
+
 .product__link {
-  display: block;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
 
   transition: box-shadow 250ms $animations-function-time;
 
@@ -17,6 +23,8 @@
 .product__thumb {
   position: relative;
   overflow: hidden;
+
+  height: 294px;
 }
 
 .product__overlay {
@@ -34,13 +42,27 @@
 
 .product__overlay-text {
   padding: 77px 24px;
-
   font-size: 18px;
   line-height: 1.55;
   color: #ffffff;
+  overflow-wrap: break-word;
+
+  @include viewport($range: tablet-only) {
+    padding: 49px 24px;
+  }
+
+  @include viewport($range: desktop) {
+    padding: 63px 24px;
+  }
+
+  @media (min-width: 100px) and (max-width: 420px) {
+    font-size: 16px;
+    padding: 40px 24px;
+  }
 }
 
 .product__text-box {
+  flex-grow: 1;
   padding: 20px 24px;
 
   border: 1px solid #eeeeee;

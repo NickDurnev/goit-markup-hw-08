@@ -3,6 +3,10 @@
   justify-content: center;
   align-items: center;
   padding: 10px 29px;
+
+  @media (max-width: 280px) {
+    padding: 0;
+  }
 }
 
 .button--subscription__icon {

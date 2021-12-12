@@ -3,7 +3,7 @@
   transform: scale(1);
   transition: transform 250ms $animations-function-time 250ms;
 
-  min-width: 450px;
+  max-width: 450px;
   min-height: 609px;
 
   background-color: #ffffff;
@@ -11,9 +11,7 @@
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
 
-  @include viewport($range: mobile) {
-    width: 450px;
-    min-height: 609px;
+  @include viewport($range: mobile-only) {
     margin: auto;
   }
 
@@ -25,7 +23,7 @@
   }
 
   @include viewport($range: desktop) {
-    width: 528px;
+    max-width: 528px;
     min-height: 581px;
   }
 }
@@ -67,7 +65,7 @@
 .modal__text {
   margin-bottom: 12px;
 
-  width: 370px;
+  max-width: 370px;
   font-weight: 700;
   font-size: 20px;
   line-height: 1.5;

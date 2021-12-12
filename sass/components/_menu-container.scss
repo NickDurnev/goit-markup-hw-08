@@ -20,6 +20,7 @@
 
   .menu-container__socials {
     display: flex;
+    flex-wrap: wrap;
   }
 
   .menu-container__socials-item {
@@ -29,13 +30,21 @@
       border-right: 1px solid rgba(33, 33, 33, 0.2);
     }
   }
+
+  .menu-container__socials-link {
+    color: $accent-color;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 1.22;
+    letter-spacing: 0.02em;
+  }
 }
 .menu-container__socials-link {
-  color: $accent-color;
-  font-weight: 500;
-  font-size: 18px;
-  line-height: 1.22;
-  letter-spacing: 0.02em;
+  //   color: $accent-color;
+  //   font-weight: 500;
+  //   font-size: 18px;
+  //   line-height: 1.22;
+  //   letter-spacing: 0.02em;
   @include viewport($range: tablet) {
     display: none;
   }

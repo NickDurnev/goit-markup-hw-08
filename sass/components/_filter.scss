@@ -1,12 +1,17 @@
 .filter {
   display: flex;
   flex-wrap: wrap;
-  // justify-content: center;
+  @include viewport($range: tablet) {
+    justify-content: center;
+  }
 }
 
 .filter__item {
-  margin-bottom: 15px;
   margin-right: 8px;
+
+  @include viewport($range: mobile-only) {
+    margin-bottom: 15px;
+  }
 
   &:last-child {
     margin-right: 0;

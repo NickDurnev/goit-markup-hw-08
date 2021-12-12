@@ -1,3 +1,5 @@
 .section-hidden {
-  display: none;
+  @include viewport($range: notDesktop) {
+    display: none;
+  }
 }

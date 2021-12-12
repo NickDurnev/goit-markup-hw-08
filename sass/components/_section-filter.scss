@@ -1,3 +1,13 @@
 .section__filter {
-  margin-bottom: 40px;
+  @include viewport($range: mobile-only) {
+    margin-bottom: 40px;
+  }
+
+  @include viewport($range: tablet-only) {
+    margin-bottom: 30px;
+  }
+
+  @include viewport($range: desktop) {
+    margin-bottom: 50px;
+  }
 }

@@ -1,9 +1,27 @@
-// .grid {
-//   // display: flex;
-//   // flex-wrap: wrap;
-//   margin: -15px;
-// }
+.grid {
+  @include viewport($range: tablet) {
+    display: flex;
+    flex-wrap: wrap;
+    margin: -15px;
+  }
+}
+
+.grid__item {
+  @include viewport($range: tablet) {
+    margin: 15px;
+  }
+
+  @include viewport($range: tablet-only) {
+    width: calc((100% - 60px) / 2);
+  }
+
+  @include viewport($range: desktop) {
+    width: calc((100% - 90px) / 3);
+  }
+}
 
 .grid__item:not(:last-child) {
-  margin-bottom: 30px;
+  @include viewport($range: mobile-only) {
+    margin-bottom: 30px;
+  }
 }
