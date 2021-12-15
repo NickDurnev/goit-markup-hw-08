@@ -11,7 +11,6 @@ body.modal-open {
 
 a {
   text-decoration: none;
-  color: #212121;
   outline: none;
 }
 
@@ -152,6 +151,12 @@ svg {
   }
 }
 
+@media (min-width: 768px) {
+  .header__contact-list {
+    margin-left: auto;
+  }
+}
+
 .container__header {
   position: relative;
 }
@@ -175,18 +180,6 @@ svg {
   }
 }
 
-@media (min-width: 768px) and (max-width: 1199.98px) {
-  .site-nav {
-    margin-right: 84px;
-  }
-}
-
-@media (min-width: 1200px) {
-  .site-nav {
-    margin-right: 305px;
-  }
-}
-
 @media (max-width: 767.98px) {
   .site-nav__item:not(:last-child) {
     margin-bottom: 32px;
@@ -201,6 +194,8 @@ svg {
 
 .site-nav__link {
   display: block;
+  color: #212121;
+  font-weight: 500;
 }
 
 .site-nav__link:hover, .site-nav__link:focus {
@@ -209,7 +204,6 @@ svg {
 
 @media (max-width: 767.98px) {
   .site-nav__link {
-    font-weight: 500;
     font-size: 40px;
     line-height: 1.17;
     letter-spacing: 0.02em;
@@ -244,12 +238,6 @@ svg {
   }
 }
 
-.contact-list {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-
 @media (max-width: 767.98px) {
   .contact-list {
     -webkit-box-orient: vertical;
@@ -263,12 +251,11 @@ svg {
   }
 }
 
-@media (min-width: 768px) and (max-width: 1199.98px) {
+@media (min-width: 1200px) {
   .contact-list {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
   }
 }
 
@@ -285,12 +272,6 @@ svg {
 }
 
 .contact-list__link {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   font-weight: 500;
 }
 
@@ -752,8 +733,6 @@ svg {
   letter-spacing: 0.06em;
   background-color: #2196f3;
   color: #ffffff;
-  -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-          box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border: 0;
   cursor: pointer;
   border-radius: 4px;
@@ -762,6 +741,8 @@ svg {
 .button--send {
   max-width: 200px;
   padding: 10px 55px;
+  -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+          box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
 
 @media (max-width: 280px) {
@@ -820,7 +801,7 @@ svg {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding: 25px 0;
+  height: 120px;
   border-radius: 4px;
   background-color: #f5f4fa;
 }
@@ -1030,6 +1011,7 @@ svg {
 
 .clients-item {
   margin: 15px;
+  height: 92px;
 }
 
 @media (max-width: 767.98px) {
@@ -1060,7 +1042,6 @@ svg {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding: 16px 0;
   width: 100%;
   height: 100%;
   border: 1px solid #afb1b8;
@@ -1086,6 +1067,12 @@ svg {
   background-color: #2f303a;
 }
 
+@media (max-width: 767.98px) {
+  .footer-section__contact-join-block {
+    margin-bottom: 60px;
+  }
+}
+
 @media (min-width: 768px) {
   .footer-section__contact-join-block {
     display: -webkit-box;
@@ -1096,19 +1083,18 @@ svg {
 
 @media (min-width: 768px) and (max-width: 1199.98px) {
   .footer-section__contact-join-block {
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-    -webkit-box-align: start;
-        -ms-flex-align: start;
-            align-items: flex-start;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -webkit-box-align: baseline;
+        -ms-flex-align: baseline;
+            align-items: baseline;
     margin-bottom: 60px;
   }
 }
 
 @media (max-width: 767.98px) {
   .footer-section__join {
-    margin: 60px 0;
+    margin-top: 60px;
   }
 }
 
@@ -1144,6 +1130,12 @@ svg {
   .footer-section__subscription {
     margin-left: 93px;
   }
+}
+
+.contact-block {
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
 }
 
 @media (max-width: 1199.98px) {
@@ -1449,7 +1441,7 @@ svg {
 .product__thumb {
   position: relative;
   overflow: hidden;
-  height: 294px;
+  height: auto;
 }
 
 .product__overlay {
@@ -1531,9 +1523,12 @@ svg {
     left: 0;
     padding: 48px 40px;
     width: 100%;
+    -webkit-box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+            box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+    border-radius: 5px;
     background: #ffffff;
-    -webkit-transform: translateY(-800px);
-            transform: translateY(-800px);
+    -webkit-transform: translateY(-850px);
+            transform: translateY(-850px);
     -webkit-transition: -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
     transition: -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
     transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -1573,6 +1568,7 @@ svg {
 
 @media (min-width: 768px) {
   .menu-container {
+    width: 100%;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -1586,7 +1582,7 @@ svg {
   position: absolute;
   z-index: 2;
   top: 10px;
-  right: 0;
+  right: 5px;
   border: none;
   background-color: transparent;
 }

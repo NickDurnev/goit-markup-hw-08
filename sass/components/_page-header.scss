@@ -30,7 +30,10 @@
   @include viewport($range: mobile-only) {
     margin-bottom: 64px;
   }
-  // margin-left: auto;
+
+  @include viewport($range: tablet) {
+    margin-left: auto;
+  }
 }
 
 .container__header {

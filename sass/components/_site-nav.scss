@@ -2,14 +2,6 @@
   @include viewport($range: tablet) {
     display: flex;
   }
-
-  @include viewport($range: tablet-only) {
-    margin-right: 84px;
-  }
-
-  @include viewport($range: desktop) {
-    margin-right: 305px;
-  }
 }
 
 .site-nav__item {
@@ -29,13 +21,15 @@
 .site-nav__link {
   display: block;
 
+  color: $primary-text-color;
+  font-weight: 500;
+
   &:hover,
   &:focus {
     color: $accent-color;
   }
 
   @include viewport($range: mobile-only) {
-    font-weight: 500;
     font-size: 40px;
     line-height: 1.17;
     letter-spacing: 0.02em;
