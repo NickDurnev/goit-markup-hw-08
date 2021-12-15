@@ -1132,15 +1132,17 @@ svg {
   }
 }
 
-.contact-block {
-  -webkit-box-flex: 1;
-      -ms-flex-positive: 1;
-          flex-grow: 1;
-}
-
 @media (max-width: 1199.98px) {
   .contact-block {
     text-align: center;
+  }
+}
+
+@media (min-width: 1200px) {
+  .contact-block {
+    -webkit-box-flex: 1;
+        -ms-flex-positive: 1;
+            flex-grow: 1;
   }
 }
 

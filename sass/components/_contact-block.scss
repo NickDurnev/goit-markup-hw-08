@@ -1,7 +1,10 @@
 .contact-block {
-  flex-grow: 1;
   @include viewport($range: notDesktop) {
     text-align: center;
+  }
+
+  @include viewport($range: desktop) {
+    flex-grow: 1;
   }
 }
 
