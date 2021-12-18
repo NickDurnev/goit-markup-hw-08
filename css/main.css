@@ -291,6 +291,12 @@ svg {
 
 @media (min-width: 1200px) {
   .contact-list__link {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.02em;
